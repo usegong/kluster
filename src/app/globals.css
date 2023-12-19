@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+    width: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    scrollbar-width: 0;
+}
+
+
+.btn-secondary {
+    @apply bg-stone-700 px-8 py-2 text-white rounded-md focus:ring-4 focus:ring-stone-300 active:bg-stone-900;
+}
+
+.btn-primary {
+    @apply bg-emerald-500 px-8 py-2 text-white rounded-md focus:ring-4 focus:ring-emerald-200 active:bg-emerald-700;
+}
+
+.btn-primary-outline {
+    @apply border border-emerald-500 px-8 py-2 rounded-md focus:ring-4 focus:ring-emerald-200 active:border-emerald-700 active:text-emerald-700;
+}
+
+.bg-dotted {
+    background-size: 100%;
+    background: black url(/dotted-background.png);
 }

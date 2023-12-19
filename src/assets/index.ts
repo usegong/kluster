@@ -1,0 +1,15 @@
+export * as Crood from "./crood.svg";
+export * as LogoMark from "./logomark.svg";
+export * as Allura from "./allura.svg";
+export * as Worm from "./worm.svg";
+export * as BlobDark from "./blob_dark.svg";
+export * as BlobLight from "./blob_light.svg";
+export * as AvatarMale1 from "./avatar_male_1.svg";
+export * as AvatarMale2 from "./avatar_male_2.svg";
+export * as BlobBackground from "./blob_background.svg";
+export * as WormBanner from "./worm_banner.svg";
+export * as IcFacebook from "./ic_facebook.svg";
+export * as IcInstagram from "./ic_instagram.svg";
+export * as IcTwitter from "./ic_twitter.svg";
+export * as IcTiktok from "./ic_tiktok.svg";
+export * as Splash from "./splash.svg";
