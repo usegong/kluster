@@ -2,7 +2,7 @@ import { features } from "@/config/features";
 
 export default function HomeFeature() {
   return (
-    <div className="flex flex-col space-y-8 md:space-y-16 px-8">
+    <div className="flex flex-col space-y-8 lt-md:px-8  md:space-y-16 md:px-16">
       <h1 className="text-2xl md:text-4xl font-bold text-center uppercase">
         A Smarter <span className="text-green">way to</span> <br /> create
         value
@@ -21,7 +21,7 @@ export default function HomeFeature() {
             </h1>
             <div className="flex flex-col space-y-2 z-10">
               <p className="text-lg font-medium uppercase">{feature.title}</p>
-              <p className="text-sm text-white/80">{feature.description}</p>
+              <p className="text-white/80">{feature.description}</p>
             </div>
           </div>
         ))}

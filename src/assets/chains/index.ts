@@ -1,0 +1,15 @@
+export * as Cardano from "./il_cardano.svg";
+export * as Corda from "./il_corda.svg";
+export * as Echo from "./il_echo.svg";
+export * as Eos from "./il_eos.svg";
+export * as Ethereum from "./il_ethereum.svg";
+export * as Flow from "./il_flow.svg";
+export * as Flow2 from "./il_flow_2.svg";
+export * as Graph from "./il_graph.svg";
+export * as Graphene from "./il_graphene.svg";
+export * as Hedera from "./il_hedera.svg";
+export * as Polygon from "./il_polygon.svg";
+export * as Qtum from "./il_qtum.svg";
+export * as Quorum from "./il_quorum.svg";
+export * as Ripple from "./il_ripple.svg";
+export * as Solana from "./il_solana.svg";

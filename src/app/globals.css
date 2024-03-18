@@ -1,1 +1,36 @@
 @unocss all;
+
+.marquee {
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-290%);
+  }
+}
+
+@screen md {
+  .marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+.filter-stone-600 {
+  filter: invert(33%) sepia(8%) saturate(951%) hue-rotate(176deg)
+    brightness(95%) contrast(94%);
+}
