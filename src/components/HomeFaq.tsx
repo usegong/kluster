@@ -25,7 +25,7 @@ export default function HomeFaq() {
               </h1>
               <MdAddCircle className="text-2xl text-green" />
             </Disclosure.Button>
-            <Disclosure.Panel className="prose prose-white text-white/80">
+            <Disclosure.Panel className="prose prose-white text-green-100">
               {faq.description}
             </Disclosure.Panel>
           </Disclosure>
