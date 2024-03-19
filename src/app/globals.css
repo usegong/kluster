@@ -1,7 +1,7 @@
 @unocss all;
 
 .marquee {
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s alternate linear infinite;
 }
 
 @keyframes marquee {
@@ -10,15 +10,15 @@
   }
 
   to {
-    transform: translateX(-290%);
+    transform: translateX(-128%);
   }
 }
 
 @screen md {
   .marquee {
-    animation: marquee 20s linear infinite;
+    animation: marquee 40s alternate linear infinite;
   }
-
+  
   @keyframes marquee {
     from {
       transform: translateX(0);

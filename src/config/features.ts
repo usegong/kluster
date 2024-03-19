@@ -5,18 +5,18 @@ type Feature = {
 
 export const features: Feature[] = [
   {
-    title: "Simple",
+    title: "Development & Integration",
     description:
-      "We schedule a meeting with you and explain in details what we are working on.",
+      "Leverage our deep knowledge of numerous frameworks to establish high-performance blockchain solutions that integrate seamlessly with your evolving ecosystem.",
   },
   {
-    title: "Clear",
+    title: "Enterprise Blockchain Development",
     description:
-      "We make the thought process clear and explanative for our clients, with templates and annotations of our ideas.",
+      "Gain a competitive edge in the market with dynamic enterprise-grade blockchain solutions that fuel DLT platforms across a variety of industry sectors.",
   },
   {
-    title: "Effective",
+    title: "DeFi Solutions Development",
     description:
-      "We execute the process with the most effective and efficient tools. We consider scaling to millions of users in future.",
+      "Amalgamate strong performance, transparency, and security in your decentralized financial application with highly specialized DeFi development services.",
   },
 ];

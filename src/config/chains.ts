@@ -23,5 +23,4 @@ export const chainImages = [
   Qtum,
   Quorum,
   Ripple,
-  Solana,
 ];
