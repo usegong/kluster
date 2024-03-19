@@ -1,5 +1,8 @@
-import { homeFaqs } from "@/config/faq";
+"use client";
 import { MdAddCircle } from "react-icons/md";
+import { Disclosure } from "@headlessui/react";
+
+import { homeFaqs } from "@/config/faq";
 
 export default function HomeFaq() {
   return (
@@ -11,13 +14,21 @@ export default function HomeFaq() {
       </div>
       <div className="flex flex-col space-y-4">
         {homeFaqs.map((faq, index) => (
-          <div
+          <Disclosure
             key={index}
-            className="flex space-x-4 items-center bg-green-950 px-4 py-4 rounded-md"
+            as="div"
+            className="flex flex-col space-y-2 bg-green-950 px-4 py-4 rounded-md"
           >
-            <h1 className="flex-1 md:text-xl">{faq.title}</h1>
-            <MdAddCircle className="text-2xl text-green" />
-          </div>
+            <Disclosure.Button className="flex space-x-4 items-center text-start">
+              <h1 className="flex-1 text-lg md:text-xl">
+                {faq.title}
+              </h1>
+              <MdAddCircle className="text-2xl text-green" />
+            </Disclosure.Button>
+            <Disclosure.Panel className="prose prose-white text-white/80">
+              {faq.description}
+            </Disclosure.Panel>
+          </Disclosure>
         ))}
       </div>
     </div>

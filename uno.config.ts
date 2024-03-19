@@ -3,6 +3,7 @@ import {
   presetAttributify,
   presetUno,
   transformerDirectives,
+  presetTypography,
 } from "unocss";
 
 export default defineConfig({
@@ -14,5 +15,5 @@ export default defineConfig({
       "bg-gradient-to-r from-green-900 via-green-800 to-green-700 text-white",
   },
   transformers: [transformerDirectives()],
-  presets: [presetUno(), presetAttributify()],
+  presets: [presetUno(), presetAttributify(), presetTypography()],
 });
