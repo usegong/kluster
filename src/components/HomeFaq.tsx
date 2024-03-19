@@ -17,7 +17,7 @@ export default function HomeFaq() {
           <Disclosure
             key={index}
             as="div"
-            className="flex flex-col space-y-2 bg-green-950 px-4 py-4 rounded-md"
+            className="w-sm md:w-2xl flex flex-col space-y-2 bg-green-950 px-4 py-4 rounded-md"
           >
             <Disclosure.Button className="flex space-x-4 items-center text-start">
               <h1 className="flex-1 text-lg md:text-xl">
