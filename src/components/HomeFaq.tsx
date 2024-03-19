@@ -1,4 +1,5 @@
 "use client";
+import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 import { MdAddCircle } from "react-icons/md";
 import { Disclosure } from "@headlessui/react";
 
@@ -20,10 +21,16 @@ export default function HomeFaq() {
             className="w-sm md:w-2xl flex flex-col space-y-2 bg-green-950 px-4 py-4 rounded-md"
           >
             <Disclosure.Button className="flex space-x-4 items-center text-start">
-              <h1 className="flex-1 text-lg md:text-xl">
-                {faq.title}
-              </h1>
-              <MdAddCircle className="text-2xl text-green" />
+              {({ open }) => (
+                <>
+                  <h1 className="flex-1 text-lg md:text-xl">{faq.title}</h1>
+                  {open ? (
+                    <FaMinusCircle className="text-2xl text-green" />
+                  ) : (
+                    <FaPlusCircle className="text-2xl text-green" />
+                  )}
+                </>
+              )}
             </Disclosure.Button>
             <Disclosure.Panel className="prose prose-white text-green-100">
               {faq.description}
