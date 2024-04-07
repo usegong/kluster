@@ -1,6 +1,8 @@
 "use client";
 
 import clsx from "clsx";
+
+import Link from "next/link";
 import Image from "next/image";
 import { Inter_Tight } from "next/font/google";
 
@@ -14,14 +16,17 @@ type LogoProps = {
 
 export default function Logo({ className }: LogoProps) {
   return (
-    <div className={clsx(className, "flex items-center space-x-2")}>
+    <Link
+      href="/"
+      className={clsx(className, "flex items-center space-x-2")}
+    >
       <Image
         src={IcApp}
-        width={48}
-        height={48}
+        width={36}
+        height={36}
         alt="Gong Logo"
       />
-      <h1 className={clsx(inter.className, "text-2xl font-extrabold")}>Gong</h1>
-    </div>
+      <h1 className={clsx(inter.className, "text-3xl font-extrabold")}>Gong</h1>
+    </Link>
   );
 }

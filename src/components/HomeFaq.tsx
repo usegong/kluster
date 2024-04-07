@@ -1,7 +1,6 @@
 "use client";
-import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
-import { MdAddCircle } from "react-icons/md";
 import { Disclosure } from "@headlessui/react";
+import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 
 import { homeFaqs } from "@/config/faq";
 

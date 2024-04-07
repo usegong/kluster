@@ -8,18 +8,18 @@ type Navigation = {
 export const layoutNavigations: Navigation[] = [
   {
     name: "Home",
-    href: "",
+    href: "/",
   },
   {
     name: "Products",
-    href: "",
+    href: "/#products",
   },
   {
     name: "Projects",
-    href: "",
+    href: "/projects",
   },
   {
     name: "Contact us",
-    href: "",
+    href: "/#contact-us",
   },
 ];

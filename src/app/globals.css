@@ -1,5 +1,9 @@
 @unocss all;
 
+.btn {
+   @apply px-8 py-2 rounded-md;
+}
+
 .marquee {
   animation: marquee 20s alternate linear infinite;
 }

@@ -5,8 +5,8 @@ import { chainImages } from "@/config/chains";
 
 export default function HomeHeroSection() {
   return (
-    <div>
-      <div className="max-w-6xl self-center flex flex-col md:flex-row">
+    <div className="self-center">
+      <div className="max-w-7xl self-center flex flex-col md:flex-row">
         <div className="max-w-xl flex flex-col space-y-4 px-8 md:px-16">
           <h1 className="text-5xl md:text-7xl font-extrabold">
             <span className="text-green-500">Blockchain</span>
